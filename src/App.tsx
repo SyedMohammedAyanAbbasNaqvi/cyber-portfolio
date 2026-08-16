@@ -59,8 +59,6 @@ export const App: React.FC = () => {
               preload="metadata"
               aria-hidden="true"
             >
-              <source src="/cybervideo.mp4" type="video/mp4" />
-              <source src="/cybervideo/cybervideo.mp4" type="video/mp4" />
               <source src="/assets/hero-bg.mp4" type="video/mp4" />
             </video>
           </div>
