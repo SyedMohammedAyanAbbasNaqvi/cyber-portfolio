@@ -46,7 +46,7 @@ export const TerminalContactForm: React.FC<TerminalContactFormProps> = ({ contac
     e.preventDefault();
     if (!validateForm()) return;
 
-    const recipient = contact.email || "developerisonduty@gmail.com";
+    const recipient = contact.email || "ayanabbas78677@gmail.com";
     const mailSubject = subject.trim() || "Portfolio Contact // New Transmission";
     const mailBody = `TRANSMISSION TERMINAL // OPEN A CHANNEL\n\nNAME://\n${name}\n\nEMAIL://\n${email}\n\nSUBJECT (OPTIONAL)://\n${subject || "N/A"}\n\nMESSAGE://\n${message}`;
 

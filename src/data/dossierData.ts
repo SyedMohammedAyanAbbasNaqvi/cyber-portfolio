@@ -560,7 +560,7 @@ export const DOSSIER_DATA: DossierData = {
     }
   ],
   contact: {
-    email: "developerisonduty@gmail.com",
+    email: "ayanabbas78677@gmail.com",
     linkedin: "https://www.linkedin.com/in/ayan-abbas-521897271/",
     github: "https://github.com/iamjustaOversizedKiddd",
     availability: "OPEN TO DISCUSSION",
