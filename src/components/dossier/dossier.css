@@ -1,0 +1,471 @@
+/* Dossier, Profile Scan & Identity Chapter Styling */
+
+.dossier-hero-container {
+  min-height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  padding-top: var(--space-4);
+  padding-bottom: var(--space-8);
+}
+
+.dossier-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  max-width: 920px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 1024px) {
+  .dossier-hero-grid {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+}
+
+/* Home Experience Background Video Layer */
+.home-experience {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  isolation: isolate;
+  border-bottom: 1px solid var(--color-surface-border);
+  min-height: calc(100vh - 120px);
+  min-height: calc(100dvh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-video-background {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.home-background-video {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  pointer-events: none;
+}
+
+.home-video-overlay {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 13, 16, 0.45);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.home-content-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4);
+}
+
+.page-content-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4);
+}
+
+/* Mobile-Only Hero Background Video Framing Optimization */
+@media (max-width: 767px) {
+  .home-experience {
+    min-height: auto;
+  }
+  .home-background-video {
+    object-position: center top;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-content-container {
+    padding: var(--space-8) var(--space-6);
+  }
+  .page-content-container {
+    padding: var(--space-8) var(--space-6);
+  }
+}
+
+/* Reduced Motion Override for Home Video */
+@media (prefers-reduced-motion: reduce) {
+  .home-background-video {
+    display: none !important;
+  }
+}
+
+/* Reduced Motion Override for Hero Video */
+@media (prefers-reduced-motion: reduce) {
+  .hero-video-wrapper {
+    display: none !important;
+  }
+}
+
+/* Massive Editorial Hero Typography */
+.dossier-title-hero {
+  font-family: var(--font-family-display);
+  font-size: clamp(2.5rem, 8.5vw, 7.5rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  color: var(--color-text-primary);
+  text-transform: uppercase;
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-4);
+  position: relative;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.dossier-title-hero .split-word {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.dossier-title-hero .split-word:first-child {
+  color: var(--color-text-primary);
+  display: block;
+}
+
+.dossier-title-hero .split-word:last-child {
+  color: var(--color-accent);
+  display: block;
+  margin-left: clamp(0px, 3vw, 40px);
+}
+
+.dossier-role-hero {
+  font-family: var(--font-family-mono);
+  font-size: clamp(0.875rem, 1.8vw, 1.25rem);
+  font-weight: 800;
+  color: var(--color-intelligence);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-6);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  border-left: 2px solid var(--color-intelligence);
+  padding-left: var(--space-3);
+}
+
+.dossier-pillars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.dossier-pillar-tag {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  padding: 8px 16px;
+  border: 1px solid var(--color-surface-border);
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  box-shadow: 4px 4px 0px var(--color-bg);
+  transition: all var(--motion-fast);
+}
+
+.dossier-pillar-tag:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  box-shadow: 4px 4px 0px var(--color-accent);
+}
+
+/* Scroll Cue */
+.scroll-cue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: var(--space-8);
+  transition: opacity 0.4s ease-out;
+  pointer-events: none;
+  position: relative;
+  z-index: 2;
+}
+
+.scroll-cue-arrow {
+  color: var(--color-accent);
+  font-size: 14px;
+  animation: bounceCue 2s infinite;
+}
+
+@keyframes bounceCue {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(6px); }
+  60% { transform: translateY(3px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-cue-arrow {
+    animation: none !important;
+  }
+}
+
+/* Profile Scan Section */
+.profile-scan-container {
+  border: 1px solid var(--color-surface-border);
+  background: var(--color-surface);
+  padding: var(--space-6);
+  position: relative;
+  overflow: hidden;
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-12);
+  box-shadow: 6px 6px 0px var(--color-surface-high);
+}
+
+.profile-scan-row {
+  display: grid;
+  grid-template-columns: 140px 1fr auto;
+  gap: var(--space-4);
+  align-items: center;
+  padding: var(--space-3) 0;
+  border-bottom: 1px dashed rgba(30, 35, 48, 0.7);
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-xs);
+}
+
+@media (max-width: 640px) {
+  .profile-scan-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+}
+
+.profile-scan-label {
+  color: var(--color-text-muted);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.profile-scan-dots {
+  color: var(--color-text-dim);
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 2px;
+}
+
+.profile-scan-value {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+/* Identity Chapter Styling */
+.identity-section {
+  padding-top: var(--space-4);
+  position: relative;
+}
+
+/* Oversized Chapter Watermark */
+.chapter-watermark {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-chapter-num);
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.025);
+  position: absolute;
+  top: -20px;
+  right: 0;
+  max-width: 100%;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
+  line-height: 0.8;
+  letter-spacing: -0.04em;
+}
+
+.identity-narrative-box {
+  border: 1px solid var(--color-surface-border);
+  border-left: 4px solid var(--color-accent);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-8);
+  background-color: var(--color-surface);
+  box-shadow: 4px 4px 0px var(--color-surface-high);
+  position: relative;
+  z-index: 2;
+}
+
+.identity-paragraph-lead {
+  font-family: var(--font-family-display);
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  font-weight: 800;
+  color: var(--color-text-primary);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.identity-paragraph {
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: 1.7;
+  color: var(--color-text-primary);
+  font-weight: 400;
+}
+
+/* Technical Evolution Journey SVG & Nodes */
+.evolution-journey-container {
+  position: relative;
+  margin-top: var(--space-8);
+  padding: var(--space-6) 0;
+}
+
+.evolution-nodes-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  position: relative;
+  z-index: 3;
+  padding-left: 36px;
+}
+
+@media (min-width: 768px) {
+  .evolution-nodes-grid {
+    padding-left: 48px;
+  }
+}
+
+.evolution-svg-line {
+  position: absolute;
+  top: 140px;
+  bottom: 24px;
+  left: 14px;
+  width: 4px;
+  height: calc(100% - 160px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .evolution-svg-line {
+    left: 20px;
+  }
+}
+
+.evolution-node-card-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Dedicated Timeline Track Node Dot */
+.evolution-timeline-node-dot {
+  position: absolute;
+  top: 24px;
+  left: -29px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--color-surface-border);
+  background-color: var(--color-bg);
+  z-index: 2;
+  transition: border-color var(--motion-normal), background-color var(--motion-normal), box-shadow var(--motion-normal);
+}
+
+@media (min-width: 768px) {
+  .evolution-timeline-node-dot {
+    left: -36px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.evolution-timeline-node-dot.active {
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
+  box-shadow: 0 0 10px var(--color-accent);
+}
+
+.evolution-timeline-node-dot.active.turning-point {
+  border-color: var(--color-threat);
+  background-color: var(--color-threat);
+  box-shadow: 0 0 10px var(--color-threat);
+}
+
+.evolution-node-card {
+  border: 1px solid var(--color-surface-border);
+  background-color: var(--color-bg);
+  padding: var(--space-6);
+  position: relative;
+  box-shadow: 4px 4px 0px var(--color-surface-high);
+  opacity: 0.65;
+  transition: border-color var(--motion-normal), transform var(--motion-normal), box-shadow var(--motion-normal), opacity var(--motion-normal);
+}
+
+.evolution-node-card.subdued {
+  opacity: 0.65;
+}
+
+.evolution-node-card.active {
+  opacity: 1;
+  border-color: var(--color-accent);
+  box-shadow: 6px 6px 0px var(--color-accent);
+}
+
+.evolution-node-card.category-SECURITY.active {
+  opacity: 1;
+  border-color: var(--color-threat);
+  box-shadow: 6px 6px 0px var(--color-threat);
+}
+
+.evolution-node-card.category-OPERATIONS.active,
+.evolution-node-card.category-AI.active {
+  opacity: 1;
+  border-color: var(--color-intelligence);
+  box-shadow: 6px 6px 0px var(--color-intelligence);
+}
+
+.evolution-node-card.turning-point {
+  border-left: 4px solid var(--color-threat);
+}
+
+.evolution-node-card.turning-point.active {
+  border-color: var(--color-threat);
+  box-shadow: 6px 6px 0px var(--color-threat);
+  background-color: rgba(255, 61, 0, 0.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .evolution-node-card {
+    opacity: 1 !important;
+  }
+}

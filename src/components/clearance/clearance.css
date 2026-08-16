@@ -1,0 +1,72 @@
+/* Clearance (Credentials & Proof) Stylesheet */
+
+.clearance-record-card {
+  border: 1px solid var(--color-surface-border);
+  background-color: var(--color-bg);
+  padding: var(--space-6);
+  position: relative;
+  transition: all var(--motion-fast);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 4px 4px 0px var(--color-surface-high);
+}
+
+.clearance-record-card:hover {
+  border-color: var(--color-success);
+  box-shadow: 4px 4px 0px var(--color-success);
+}
+
+.clearance-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .clearance-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .clearance-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tactical Verification Stamp */
+.tactical-verification-stamp {
+  font-family: var(--font-family-mono);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: var(--color-success);
+  border: 2px solid var(--color-success);
+  background-color: rgba(0, 230, 118, 0.06);
+  padding: 4px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transform: rotate(-2deg);
+  box-shadow: 2px 2px 0px rgba(0, 230, 118, 0.2);
+}
+
+/* Issuer Initials Badge Box */
+.issuer-initials-box {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--color-surface-border);
+  background-color: var(--color-surface);
+  color: var(--color-accent);
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-md);
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+  box-shadow: 3px 3px 0px var(--color-bg);
+}

@@ -1,0 +1,36 @@
+/* Capability Matrix & Technical Arsenal Styles */
+
+.capability-matrix-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+@media (min-width: 1024px) {
+  .capability-matrix-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.capability-domain-card {
+  transition: border-color var(--motion-fast), box-shadow var(--motion-fast);
+}
+
+.capability-domain-card:hover {
+  border-color: var(--color-surface-high);
+}
+
+.capability-state-badge {
+  border-radius: 0px;
+}
+
+/* Touch Friendly Mobile Targets */
+@media (max-width: 767px) {
+  .capability-domain-card {
+    padding: var(--space-4);
+  }
+  
+  .capability-matrix-grid {
+    grid-template-columns: 1fr;
+  }
+}
