@@ -424,8 +424,8 @@ export const DOSSIER_DATA: DossierData = {
       name: "JARVIS",
       classification: "MULTI-LLM AGENTIC SYSTEM",
       status: "VERIFIED",
-      url: "https://github.com/iamjustaOversizedKiddd",
-      githubUrl: "https://github.com/iamjustaOversizedKiddd",
+      url: "https://github.com/SyedMohammedAyanAbbasNaqvi",
+      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
       coreTagline: "MULTI-MODEL ORCHESTRATION & AGENTIC AUTOMATION",
       summary: "Personal AI assistant infrastructure providing multi-model routing, voice interaction, document intelligence (RAG), and task execution.",
       description: "JARVIS acts as an intelligent command bridge. Rather than relying on a single AI model, it routes developer & operational prompts to task-optimized LLMs, manages retrieval-augmented context, and executes automated multi-step tool calls.",
@@ -478,8 +478,8 @@ export const DOSSIER_DATA: DossierData = {
       name: "SENTINEL",
       classification: "AI SOC ANALYST PLATFORM",
       status: "VERIFIED",
-      url: "https://github.com/iamjustaOversizedKiddd",
-      githubUrl: "https://github.com/iamjustaOversizedKiddd",
+      url: "https://github.com/SyedMohammedAyanAbbasNaqvi",
+      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
       coreTagline: "CONNECT SIGNALS, NOT JUST ALERTS.",
       summary: "AI-powered SOC analyst platform designed for security signal correlation, threat triage, and incident investigation automation.",
       description: "SENTINEL transforms raw, high-volume SIEM alert noise into correlated security signals. Using LLM-assisted context synthesis, it correlates multi-source log telemetry to accelerate SOC investigation and threat response.",
@@ -562,7 +562,7 @@ export const DOSSIER_DATA: DossierData = {
   contact: {
     email: "ayanabbas78677@gmail.com",
     linkedin: "https://www.linkedin.com/in/ayan-abbas-521897271/",
-    github: "https://github.com/iamjustaOversizedKiddd",
+    github: "https://github.com/SyedMohammedAyanAbbasNaqvi",
     availability: "OPEN TO DISCUSSION",
     location: "LKO-IN / LUCKNOW, IN",
     responseWindow: "24-48 HOURS"
@@ -640,7 +640,7 @@ export const DOSSIER_DATA: DossierData = {
         "Authorization boundary inspection and access control flaw identification."
       ],
       technologies: ["Python", "Burp Suite", "OWASP API Top 10", "REST APIs", "JWT", "Fuzzing"],
-      githubUrl: "https://github.com/iamjustaOversizedKiddd",
+      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
       liveUrl: null,
       accentColor: "var(--color-threat)",
       evidenceLabel: "RED TEAM LAB #01",
@@ -663,7 +663,7 @@ export const DOSSIER_DATA: DossierData = {
         "OAuth 2.0 grant flow state validation and redirect security inspection."
       ],
       technologies: ["Python", "JWT Security", "OAuth 2.0", "Token Forensics", "Cryptography", "Session Security"],
-      githubUrl: "https://github.com/iamjustaOversizedKiddd",
+      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
       liveUrl: null,
       accentColor: "var(--color-threat)",
       evidenceLabel: "RED TEAM LAB #02"
@@ -685,7 +685,7 @@ export const DOSSIER_DATA: DossierData = {
         "Automated lockfile parsing and transitive dependency vulnerability scanning."
       ],
       technologies: ["Node.js", "Python", "SBOM (CycloneDX)", "Dependency Audit", "Package Integrity", "CI/CD Security"],
-      githubUrl: "https://github.com/iamjustaOversizedKiddd",
+      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
       liveUrl: null,
       accentColor: "var(--color-threat)",
       evidenceLabel: "RED TEAM LAB #03"
@@ -707,7 +707,7 @@ export const DOSSIER_DATA: DossierData = {
         "Mitigation evaluation using row locks, mutex primitives, and atomic state updates."
       ],
       technologies: ["Go", "Python (Asyncio)", "HTTP/2 Parallel Streams", "Database Locking", "Concurrency Analysis", "TOCTOU Testing"],
-      githubUrl: "https://github.com/iamjustaOversizedKiddd",
+      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
       liveUrl: null,
       accentColor: "var(--color-threat)",
       evidenceLabel: "RED TEAM LAB #04"
@@ -729,7 +729,7 @@ export const DOSSIER_DATA: DossierData = {
         "Automated alert generation and threat classification for SOC triage workflows."
       ],
       technologies: ["Python", "Scikit-Learn", "Log Telemetry", "Anomaly Detection", "Detection Engineering", "JSON Logs"],
-      githubUrl: "https://github.com/iamjustaOversizedKiddd",
+      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
       liveUrl: null,
       accentColor: "var(--color-intelligence)",
       evidenceLabel: "BLUE TEAM LAB #05"
@@ -751,7 +751,7 @@ export const DOSSIER_DATA: DossierData = {
         "Mapping observed attacker commands and activity vectors to MITRE ATT&CK."
       ],
       technologies: ["Python", "Docker", "Honeypots", "IOC Extraction", "MITRE ATT&CK", "Log Analytics"],
-      githubUrl: "https://github.com/iamjustaOversizedKiddd",
+      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
       liveUrl: null,
       accentColor: "var(--color-intelligence)",
       evidenceLabel: "BLUE TEAM LAB #06"
@@ -773,7 +773,7 @@ export const DOSSIER_DATA: DossierData = {
         "User-space telemetry pipeline converting kernel events into structured security alerts."
       ],
       technologies: ["C", "eBPF / BCC", "Linux Kernel Hooks", "Syscall Tracing", "Python", "Security Observability"],
-      githubUrl: "https://github.com/iamjustaOversizedKiddd",
+      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
       liveUrl: null,
       accentColor: "var(--color-intelligence)",
       evidenceLabel: "BLUE TEAM LAB #07"
@@ -795,7 +795,7 @@ export const DOSSIER_DATA: DossierData = {
         "Interactive threat correlation map and security telemetry timeline controls."
       ],
       technologies: ["React", "TypeScript", "Vite", "D3.js / Charting", "Threat Feeds API", "REST"],
-      githubUrl: "https://github.com/iamjustaOversizedKiddd",
+      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
       liveUrl: null,
       accentColor: "var(--color-intelligence)",
       evidenceLabel: "BLUE TEAM LAB #08"
